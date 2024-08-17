@@ -1,0 +1,37 @@
+
+{% schema %}
+ {
+    "name": "Custom Collage",
+    "settings": [
+{
+        "type": "text",
+        "id": "custom_image_title",
+        "label": "custom collage title"
+      }
+],
+"max_blocks":11,
+    "blocks":[
+      {
+      "name": "collage image",
+      "type": "collage_image",
+       "settings": [
+{
+        "type": "text",
+        "id": "title",
+        "label": "collage title"
+      },
+      {
+        "type": "image_picker",
+        "id": "collage_image",
+        "label": "collage image"
+      }   
+       ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Collage"
+      }
+    ]
+  }  
+{% endschema %}
